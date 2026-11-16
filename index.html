@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleight privacy policy</title>
+<style>
+:root { color-scheme: light dark; }
+body { margin: 0 auto; padding: 40px 16px 80px; max-width: 680px; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; background: #fff; color: #1a1d21; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 12px; }
+h2 { font-size: 21px; margin: 40px 0 8px; }
+p, ul { margin: 0 0 16px; }
+ul { padding-left: 22px; }
+.meta { color: #55606e; font-size: 15px; }
+a { color: #1757e0; overflow-wrap: anywhere; }
+@media (prefers-color-scheme: dark) { body { background: #14171c; color: #e6e9ed; } .meta { color: #9aa4b2; } a { color: #7aa7ff; } }
+</style>
+</head>
+<body>
+<h1>Sleight privacy policy</h1>
+<p class="meta">Publisher: slowhandsdev<br>Contact: <a href="https://github.com/slowhandsdev/sleight-privacy/issues">https://github.com/slowhandsdev/sleight-privacy/issues</a><br>Effective date: 16 November 2026</p>
+<p>Sleight — Session Switcher saves a site&#x27;s login state as named profiles and switches between them. This policy says what it captures, where that data lives and how to delete it.</p>
+<h2>What Sleight captures</h2>
+<p>When you save a profile for a site, Sleight reads that site&#x27;s:</p>
+<ul><li>cookies, including HttpOnly cookies and their attributes</li><li>localStorage</li><li>sessionStorage</li></ul>
+<p>The site is the whole registrable domain. For example, example.com and its subdomains count as one site. Sleight captures this only for sites where you save a profile, and only when you start a save, a switch, a new profile or a blank session. Sleight also finishes a switch you started if it was interrupted, for example if the browser closed part-way. When you switch, Sleight also saves the site&#x27;s current state back into the active profile.</p>
+<p>When you open Sleight&#x27;s popup on a site that has profiles, Sleight reads that site&#x27;s cookies to tell whether the current session is saved. It does not store them unless you then save or switch.</p>
+<p>Cookies and storage can contain login tokens. Sleight treats them as credentials.</p>
+<p>Sleight also stores the profile names you choose, the site each profile belongs to, and which profile is active for each site.</p>
+<h2>Where it is stored</h2>
+<p>All of it is stored in your browser&#x27;s local extension storage, on your device. Profiles are not encrypted there. Anyone who can read your browser&#x27;s data on this device can read them. Only export files are encrypted.</p>
+<p>Sleight does not use browser sync storage, so it does not upload anything to your Google account.</p>
+<h2>What is transmitted</h2>
+<p>Nothing. Sleight makes no network requests. It has no analytics, no crash reporting and no remote code. It does not sell your data, share it with anyone or use it for any purpose other than saving and switching sessions.</p>
+<h2>Export files</h2>
+<p>On the options page you can export selected profiles to a file. The file is encrypted with a passphrase you choose. It contains live logins. Anyone who has the file and the passphrase can sign in as those accounts. Keep it safe, and delete it when you no longer need it. Sleight does not keep a copy of the file or the passphrase.</p>
+<h2>Toolbar badge</h2>
+<p>The toolbar badge shows which profile is active on the current tab&#x27;s site. To do this, Sleight reads the address (URL) of your open tabs. The browser makes a tab&#x27;s address visible to Sleight only for sites you have given it access to. Sleight does not store these addresses and does not send them anywhere.</p>
+<h2>Site access</h2>
+<p>Sleight asks the browser for access to a site the first time you save a profile there. You can see and remove this access in the browser&#x27;s extension settings. Sleight does not request access to all sites up front.</p>
+<h2>Incognito</h2>
+<p>Sleight is not available in incognito windows.</p>
+<h2>Deleting your data</h2>
+<ul><li>One profile: delete it on the options page.</li><li>Everything: choose &quot;Delete all data…&quot; on the options page. This removes every profile and site record, and gives back the site access Sleight was granted. The sites themselves are left as they are.</li><li>Removing the extension from your browser removes its stored data.</li></ul>
+<p>Deleting a profile or all data does not log you out of a site. Whatever cookies and storage the browser currently holds for the site stay as they are.</p>
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version will be published at <a href="https://slowhandsdev.github.io/sleight-privacy/">https://slowhandsdev.github.io/sleight-privacy/</a> with a new effective date.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: open an issue at <a href="https://github.com/slowhandsdev/sleight-privacy/issues">https://github.com/slowhandsdev/sleight-privacy/issues</a></p>
+</body>
+</html>
